@@ -1,0 +1,26 @@
+package com.design.patterns.facade;
+
+/*
+ * 子系统类(SubSystem)
+ */
+public class FacadeWater {
+	boolean waterIsBoiling;
+
+	public FacadeWater() {
+		setWaterIsBoiling(false);
+		System.out.println("behold the wonderous water");
+	}
+
+	public void boilFacadeWater() {
+		setWaterIsBoiling(true);
+		System.out.println("water is boiling");
+	}
+
+	public void setWaterIsBoiling(boolean isWaterBoiling) {
+		waterIsBoiling = isWaterBoiling;
+	}
+
+	public boolean getWaterIsBoiling() {
+		return waterIsBoiling;
+	}
+}
